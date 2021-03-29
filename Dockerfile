@@ -1,5 +1,7 @@
 FROM rocker/geospatial:4.0.3
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN chown rstudio:rstudio -R /home/rstudio/
 RUN chmod -R 775 /home/rstudio/
 COPY ./ /home/rstudio/
