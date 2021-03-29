@@ -9,45 +9,6 @@ RUN chown rstudio:rstudio -R /home/rstudio/
 RUN apt-get update && \
     apt-get install -y binutils libproj-dev gdal-bin grass qgis qgis-plugin-grass saga
 
-# RUN install2.r --error \
-#   remotes \
-#   shinythemes \
-#   shinydashboard \
-#   spdplyr \
-#   here \
-#   lwgeom \
-#   tmap \
-#   tmaptools \
-#   stars \
-#   GWmodel \
-#   gwrr \
-#   spgwr \
-#   viridis \
-#   gridExtra \
-#   colorspace \
-#   scales \
-#   rasterVis \
-#   knitr \
-#   kableExtra \
-#   doMC \
-#   foreach \
-#   rcartocolor \
-#   globe \
-#   USAboundaries \
-#   RSAGA  \
-#   rgrass7 \
-#   link2GI \
-#   reticulate \
-#   sperrorest \
-#   reshape2 \
-#   mlr \
-#   parallelMap \
-#   stplanr \
-#   classInt \
-#   vegan \
-#   mgcv \
-#   ranger \
-#   BiodiversityR \
 RUN install2.r --error \
   remotes \
   renv
