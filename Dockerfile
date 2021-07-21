@@ -11,6 +11,10 @@ RUN chown rstudio:rstudio -R /home/rstudio/
 RUN apt-get update && \
     apt-get install -y binutils libproj-dev gdal-bin grass qgis qgis-plugin-grass saga
 
+RUN apt-get install -y \
+      fonts-ipaexfont \
+      fonts-noto-cjk
+
 RUN install2.r --error \
   remotes \
   renv
